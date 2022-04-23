@@ -1,0 +1,328 @@
+<html>
+    <head>
+        <style>
+            @font-face{
+                font-family: Josefin Sans;
+                src: url("JosefinSans-Semibold.ttf")
+            }
+            @keyframes expand {
+              from {font-size: 100vw;}
+                to {font-size: 4vw;}}
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+            
+            
+            html, body{
+                padding: 0;
+                margin: 0;
+            }
+            .main {
+
+            /* Fill the available space */
+                height: 100vh;
+              /* Make the children of the element closer to the viewport */
+              perspective: 2px;
+
+              /* Hide the overflow */
+                overflow-x: hidden;
+            }
+
+            #static3{
+                background-color: #00CBA9;
+                height: 800px;
+                margin-top: 270px;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .static-two{
+                
+                display: flex;
+                flex-direction: column;
+                top: 120%;
+                background-color: #aaccff;
+                 height: 10000px;
+            }
+            .section {
+              position: relative;
+              font-size: 4vw;
+              font-weight: bold;
+            }
+            .parallax {
+              /* Position the pseudo-element to fill the parent */
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background-size: cover;
+              transform: translateZ(-10px) scale(8);
+              font-family: 'Josefin Sans', sans-serif;
+              color: white;
+                
+
+              z-index: -5;
+            }
+            .parallax-one{
+                background-image: url("https://iili.io/VAg30B.jpg");
+                background-position: center;
+                opacity: 0.5;
+                width: 100%;
+                height: 100%;
+                display: flex; 
+                justify-content: center;
+                flex-direction: column;
+                animation-name: expand;
+                animation-duration: 2s;
+                align-items: center;
+                white-space: nowrap;
+            }
+            #wave{
+                position: relative;
+                top: -2%;
+                padding: 0px;
+            }
+            #wave-2{
+                position: relative;
+                top: 3%;
+                padding: 0px;
+            }
+            #scroll{
+                position: relative;
+                top: 100px;
+                width: 80px;
+                height: auto;
+            }
+            #Title{
+                text-align: center;
+                font-family: 'Josefin Sans', sans-serif;
+                color: black;
+                font-size: 40px;
+            }
+            
+            #Content{
+                text-align: center;
+                font-family: 'Josefin Sans', sans-serif;
+                color: black;
+                font-size: 50px;
+                list-style-position: inside;
+            }   
+            
+            #map{
+                max-width: 80%;
+            }
+            #static4{
+                margin-top: -200px;
+                height: 1500px;
+                background-color: #34baeb;
+            }
+            #wave-3{
+                position: relative;
+                top: -2%;
+                padding: 0px;
+            }
+            #static5{
+                background-color: #6200ff;
+                height: 3500px;
+                margin-top: -270px;
+                display: flex;
+                flex-direction: column;
+
+                grid-gap: 30px;
+
+            }
+            #wave-4{
+                position: relative;
+                top: -2%;
+                padding: 0px;
+            }
+            #wave-6{
+                position: relative;
+                top: -2%;
+                padding: 0px;
+                margin-top: 0px;}
+            #social{
+                text-align: center;
+                font-family: 'Josefin Sans', sans-serif;
+                color: black;
+                font-size: 50px;
+                list-style-position: inside;
+                border: 0px;
+                border-radius: 25px;
+                background-color: #ad1a44;
+                width: 90vw;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            
+            }
+            #economic{
+                text-align: center;
+                font-family: 'Josefin Sans', sans-serif;
+                color: black;
+                font-size: 50px;
+                list-style-position: inside;
+                border: 0px;
+                border-radius: 25px;
+                background-color: #4a3500;
+                width: 90vw;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            
+            }
+            #environmental{
+                text-align: center;
+                font-family: 'Josefin Sans', sans-serif;
+                color: black;
+                font-size: 50px;
+                list-style-position: inside;
+                border: 0px;
+                border-radius: 25px;
+                background-color: #164a00;
+                width: 90vw;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            
+            }
+            flood{
+                width: 80%;
+                
+            }
+            #rain-map{
+                width: 30%; 
+            }
+            #static6{
+                background-color: #124f8c;
+                height: 1800px;
+                margin-top: -270px;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                
+            }
+            
+            #river{
+                width: 60%;
+            }
+            #floodprotect{
+                width: 60%;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="main">
+            
+            
+            <div class="section parallax parallax-one">
+            <h1>Storm Christoph</h1>
+            <p>by Anthony Marchant<p>
+            <img id=scroll src="https://iili.io/VAZu1a.png" alt="scroll down"/>
+            </div>
+            
+            <div id="static" class="section static static-two">
+                <img id=wave width=100% height="350px" src="https://iili.io/VAieff.png">
+                <div id=Title><h1>Where was Storm Christof?</h1></div>
+                <div id=Content><ul>
+                        
+                        <li>Storm Christoph affected all of the UK but had the worst impact in and around the midlands</li>
+                        <br>
+                        <li>The storm travelled across the UK from West to East</li>
+                        <img id=map width="800px" src="https://i.inews.co.uk/content/uploads/2021/01/Screenshot-2021-01-20-at-10.00.19-760x637.png">
+                    
+                    
+                    </ul>    
+                </div>
+                <img id=wave-2 width=100% height=300px src="path2.png"/>
+                <div id="static3" class="section">
+                
+                    <div id=Title><br><br><br><h1>When was Storm Christoph?</h1></div>
+                    <div id=Content>
+                    <ul>
+                        <li>Storm Christoph lasted 3 days between the 19th and 21st of January 2021</li>
+                    </ul>
+                    </div>    
+                </div>
+                <img id=wave-3 width=100% height=300px src="path889.png"/>
+                <div id="static4" class="section">
+                    <div id=Title><h1>What happened?</h1></div>
+                    <div id=Content>
+                    <ul>
+                        <li>The storm produced a convective rainstorm which led to severe flooding</li>
+                        <br>
+                        <li>The storm also brought strong winds and snow</li>
+                    </ul>
+                    <img id=rain-map src="Rainfall%20map.jpg">
+                    </div>  
+                    </div>
+                <img id=wave-4 width=100% height=300px src="path954.png"/>
+                <div id="static5" class="section">
+                    <div id=Title style="color: white"><h1>What were the impacts?</h1></div>
+                        <div id="social">
+                            <div id =Title style="color: white"><h1>Social</h1></div>
+                            <ul style="color: white">
+                               
+                                <li>675 properties were flooded across England and Wales</li>
+                                <br>
+                                <li>Over 1500 homes lost power in Leeds</li>
+                                <br>
+                                <li>Communities were cut off by flooded roads</li>
+                                <br>
+                                <li>Accidents occurred on motorways</li>
+                            </ul>
+                            
+                            <img id=flood src="0_flooding.jpg">
+                            <br> 
+                            </div>
+                            <div id="economic">
+                            <div id =Title style="color: white"><h1>Economic</h1></div>
+                            <ul style="color: white">
+                                <li>Insurance losses between 80 and 120 million</li>
+                                <br>
+                            </ul>
+                
+                            </div>
+                            <div id="environmental">
+                                    <div id =Title style="color: white"><h1>Environmental</h1></div>
+                                    <ul style="color: white">
+                                        <li>Riverside walkways damaged</li>
+                                        <br>
+                                        <li>The river Dee burst its banks inundating properties along the valley</li>
+                                        <br>
+                                    </ul>
+                                    <img src="river.png" id="river">
+                                    <br>
+                            </div> 
+                            </div>
+                            <img id=wave-6 width=100% height=300px src="wave-6.png"/>
+                            <div id="static6" class="section">
+                                <div id=Title><h1 style="color: white;">How did people respond to the storm?</h1></div>
+                                <div id=Content>
+                                <ul style="color: white;">
+                                    <li>Thousands of people were evacuated</li>
+                                    <br>
+                                    <li>Rescue were sent out to help people out of buildings</li>
+                                    <br>
+                                    <li>Welsh government gave financial help to storm victims</li>
+                                    <br>
+                                    <li>Active flood risk management in Greater Manchester, York and other areas significantly reduced the total number of properties flooded</li>
+                                </ul>
+                                <img src="floodprotection.jpg" id="floodprotect">
+                                </div>  
+                                </div>
+                           
+                    </div>
+            </main> 
+        </body>
+    </html>
